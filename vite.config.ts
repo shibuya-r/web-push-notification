@@ -5,7 +5,7 @@ import { copyFileSync } from "node:fs";
 import { join } from "node:path";
 
 export default defineConfig({
-  base: "/",
+  base: "/web-push-notification/",
   plugins: [
     remix({
       future: {
@@ -14,7 +14,7 @@ export default defineConfig({
         v3_throwAbortReason: true,
       },
       ssr: false,
-      basename: "/",
+      basename: "/web-push-notification/",
       buildEnd(args) {
         if (!args.viteConfig.isProduction) return;
         const buildPath = args.viteConfig.build.outDir;
