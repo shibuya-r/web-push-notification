@@ -25,6 +25,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+export const links = () => {
+  return [
+    { rel: "manifest", href: '/manifest.json' },
+  ]
+}
+
 export default function App() {
   return <Outlet />;
 }
