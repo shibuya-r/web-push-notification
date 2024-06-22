@@ -32,6 +32,12 @@ export const links = () => {
   ]
 }
 
+export const scripts = () => {
+  self.addEventListener("fetch", function () {
+    return;
+  });
+}
+
 export default function App() {
   return <Outlet />;
 }

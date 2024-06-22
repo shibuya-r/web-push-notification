@@ -8,12 +8,12 @@ import { RemixBrowser } from "@remix-run/react";
 import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    // we will register it after the page complete the load
-    void navigator.serviceWorker.register("/web-push-notification/sw.js");
-  });
-}
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", () => {
+//     // we will register it after the page complete the load
+//     void navigator.serviceWorker.register("/web-push-notification/sw.js");
+//   });
+// }
 
 startTransition(() => {
   hydrateRoot(
