@@ -27,7 +27,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export const links = () => {
   return [
-    { rel: "manifest", href: "manifest.json", crossOrigin: "use-credentials" }
+    { rel: "manifest", href: "public/manifest.json", crossOrigin: "use-credentials" },
+    { rel: "icon", href: "public/favicon.ico" }
   ]
 }
 
